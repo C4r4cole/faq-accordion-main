@@ -6,67 +6,82 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-		<link rel="stylesheet" href="output.css" />
+		<link rel="stylesheet" href="./output.css" />
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet" /> -->
 
 		<title>Frontend Mentor | FAQ accordion</title>
 	</head>
-	<body>
-		<main>
-			<div class="title">
+	<body class="relative flex h-screen w-screen items-center justify-center bg-purplegrey">
+		<img class="absolute top-0 w-full" src="./assets/images/background-pattern-desktop.svg" alt="" />
+		<main class="rounded-xl z-10 bg-white w-1/3 p-8">
+			<div class="title flex w-1/3 justify-between items-center">
 				<img src="./assets/images/icon-star.svg" alt="étoile" />
-				<h1>FAQs</h1>
+				<h1 class="text-5xl font-bold mb-8">FAQs</h1>
 			</div>
 			<div class="questions">
 				<div class="q1">
-					<div class="question">
-						<h2>What is Frontend Mentor, and how will it help me?</h2>
-						<img src="./assets/images/icon-plus.svg" alt="" />
-						<img src="./assets/images/icon-minus.svg" alt="" />
+					<div class="question mt-8 flex justify-between">
+						<h2 class="font-bold hover:text-darkpurple cursor-pointer">
+							What is Frontend Mentor, and how will it help me?
+						</h2>
+						<div class="accordion-icon">
+							<img class="plus cursor-pointer" src="./assets/images/icon-plus.svg" alt="" />
+							<img class="minus cursor-pointer" src="./assets/images/icon-minus.svg" alt="" hidden />
+						</div>
 					</div>
-					<div class="answer">
+					<div class="answer text-greyishpurple" hidden>
 						Frontend Mentor offers realistic coding challenges to help developers improve their frontend
 						coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal
 						for portfolio building.
 					</div>
 				</div>
 				<div class="q2">
-					<div class="question">
-						<h2>Is Frontend Mentor free?</h2>
-						<img src="./assets/images/icon-plus.svg" alt="" />
-						<img src="./assets/images/icon-minus.svg" alt="" />
+					<div class="question mt-8 flex justify-between">
+						<h2 class="font-bold hover:text-darkpurple">Is Frontend Mentor free?</h2>
+						<div class="accordion-icon">
+							<img class="plus cursor-pointer" src="./assets/images/icon-plus.svg" alt="" />
+							<img class="minus cursor-pointer" src="./assets/images/icon-minus.svg" alt="" hidden />
+						</div>
 					</div>
-					<div class="answer">
+					<div class="answer text-greyishpurple" hidden>
 						Yes, Frontend Mentor offers both free and premium coding challenges, with the free option
 						providing access to a range of projects suitable for all skill levels.
 					</div>
 				</div>
 				<div class="q3">
-					<div class="question">
-						<h2>Can I use Frontend Mentor projects in my portfolio?</h2>
-						<img src="./assets/images/icon-plus.svg" alt="" />
-						<img src="./assets/images/icon-minus.svg" alt="" />
+					<div class="question mt-8 flex justify-between">
+						<h2 class="font-bold hover:text-darkpurple">
+							Can I use Frontend Mentor projects in my portfolio?
+						</h2>
+						<div class="accordion-icon">
+							<img class="plus cursor-pointer" src="./assets/images/icon-plus.svg" alt="" />
+							<img class="minus cursor-pointer" src="./assets/images/icon-minus.svg" alt="" hidden />
+						</div>
 					</div>
-					<div class="answer">
+					<div class="answer text-greyishpurple" hidden>
 						Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way
 						to showcase your skills to potential employers!
 					</div>
 				</div>
 				<div class="q4">
-					<div class="question">
-						<h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
-						<img src="./assets/images/icon-plus.svg" alt="" />
-						<img src="./assets/images/icon-minus.svg" alt="" />
+					<div class="question mt-8 flex justify-between">
+						<h2 class="font-bold hover:text-darkpurple">
+							How can I get help if I'm stuck on a Frontend Mentor challenge?
+						</h2>
+						<div class="accordion-icon">
+							<img class="plus cursor-pointer" src="./assets/images/icon-plus.svg" alt="" />
+							<img class="minus cursor-pointer" src="./assets/images/icon-minus.svg" alt="" hidden />
+						</div>
 					</div>
-					<div class="answer">
+					<div class="answer text-greyishpurple" hidden>
 						The best place to get help is inside Frontend Mentor's Discord community. There's a help channel
 						where you can ask questions and seek support from other community members.
 					</div>
 				</div>
 			</div>
 		</main>
-		<div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-			Coded by <a href="#">Your Name Here</a>.
-		</div>
+		<script src="./index.js"></script>
 	</body>
 </html>
