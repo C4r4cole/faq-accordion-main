@@ -7,6 +7,9 @@ module.exports = {
 				purplegrey: '#F9F0FF',
 				darkpurple: '#AD28EB',
 				greyishpurple: '#8C6991'
+			},
+			fontFamily: {
+				'work-sans': [`"work sans"`]
 			}
 		}
 	},

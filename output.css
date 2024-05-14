@@ -2013,6 +2013,10 @@ video {
   vertical-align: super;
 }
 
+.font-work-sans {
+  font-family: "work sans";
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
